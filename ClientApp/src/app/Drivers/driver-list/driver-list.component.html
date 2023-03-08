@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="row">
+    <a class="btn btn-primary" routerLink="/add-driver">Add New Driver</a>
+  </div>
+  <div *ngFor="let driver of drivers" class="col-2">
+    <app-driver-card [driver]="driver"></app-driver-card>
+  </div>
+</div>
+

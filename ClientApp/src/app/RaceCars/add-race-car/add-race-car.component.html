@@ -1,0 +1,39 @@
+<form #addRaceCarForm="ngForm" (ngSubmit)="onSubmit(addRaceCarForm.value)" autocomplete="off">
+  <h2 class="text-center ">Add RaceCar</h2>
+  <hr>
+  <div class="mb-3">
+    <label for="make">Make: </label>
+    <input type="text"
+           class="form-control"
+           name="make"
+           [ngModel]="targetRaceCar.make">
+  </div>
+  <div class="mb-3">
+    <label for="model">Model: </label>
+    <input type="text"
+           class="form-control"
+           name="model"
+           [ngModel]="targetRaceCar.model">
+  </div>
+  <div class="mb-3">
+    <label for="year">Year: </label>
+    <input type="text"
+           class="form-control"
+           name="year"
+           [ngModel]="targetRaceCar.year">
+  </div>
+  <div class="mb-3">
+    <label for="miles">Miles: </label>
+    <input type="text"
+           class="form-control"
+           name="miles"
+           [ngModel]="targetRaceCar.miles">
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-success me-2" type="submit">Submit</button>
+    <button class="btn btn-default" type="reset" (click)="onCancel()">Cancel</button>
+  </div>
+
+
+</form>

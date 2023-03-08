@@ -1,0 +1,17 @@
+<div class="card mx-2 my-4" *ngIf="raceCar">
+  <div class="card-img-wrapper">
+    <img src="{{'../assets/RaceCar.jpg'}} " alt="{{raceCar.make}} {{raceCar.model}}" class="card-img-top">
+  </div>
+  <div class="card-body p-1 mb-3">
+    <p class="card-text  text-center">
+      Make: {{raceCar.make}}
+      <br />
+      Model: {{raceCar.model}}
+      <br />
+      Year: {{raceCar.year}}
+      <br />
+      Miles: {{raceCar.miles}}
+    </p>
+
+  </div>
+</div>

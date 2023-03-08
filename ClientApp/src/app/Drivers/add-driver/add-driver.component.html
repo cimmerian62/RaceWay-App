@@ -1,0 +1,37 @@
+<form #addDriverForm="ngForm" (ngSubmit)="onSubmit(addDriverForm.value)" autocomplete="off">
+  <h2 class="text-center ">Add Driver</h2>
+  <hr>
+  <div class="mb-3">
+    <label for="name">Name: </label>
+    <input type="text"
+           class="form-control"
+           name="name"
+           [ngModel]="targetDriver.name"
+           >
+  </div>
+  <div class="mb-3">
+    <label for="gender">Gender: </label>
+    <select class="form-control"
+            name="gender"
+            [ngModel]="targetDriver.gender">
+      <option value="" selected></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="age">Age: </label>
+    <input type="number"
+           class="form-control"
+           name="age"
+           [ngModel]="targetDriver.age"
+           >
+  </div>
+  <div class="text-center">
+    <button class="btn btn-success me-2" type="submit">Submit</button>
+    <button class="btn btn-default" type="reset" (click)="onCancel()">Cancel</button>
+  </div>
+
+
+</form>

@@ -1,0 +1,16 @@
+<div class="card mx-2 my-4" *ngIf="driver">
+  <div class="card-img-wrapper">
+    <img src="{{'../assets/driver.jpg'}} " alt="{{driver.name}}" class="card-img-top">
+  </div>
+  <div class="card-body p-1 mb-3">
+    <h6 class="card-title text-center">
+      Name: {{driver.name}}
+    </h6>
+    <p class="card-text text-muted text-center">
+      Gender: {{driver.gender}}
+      <br />
+      Age: {{driver.age}}
+    </p>
+    
+  </div>
+</div>
